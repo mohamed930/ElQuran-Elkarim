@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D325DC072413EEAF0016183F /* CityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D325DC062413EEAF0016183F /* CityName.swift */; };
+		D337A478240FD87200CA5385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D337A477240FD87200CA5385 /* AppDelegate.swift */; };
+		D337A47D240FD87200CA5385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D337A47B240FD87200CA5385 /* Main.storyboard */; };
+		D337A480240FD87200CA5385 /* Elquran_Kaream.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D337A47E240FD87200CA5385 /* Elquran_Kaream.xcdatamodeld */; };
+		D337A482240FD87B00CA5385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D337A481240FD87B00CA5385 /* Assets.xcassets */; };
+		D337A485240FD87B00CA5385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D337A483240FD87B00CA5385 /* LaunchScreen.storyboard */; };
+		D337A48D240FE0B400CA5385 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D337A48C240FE0B400CA5385 /* HomePage.swift */; };
+		D337A492240FE81600CA5385 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D337A490240FE81600CA5385 /* Cell.swift */; };
+		D337A493240FE81600CA5385 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D337A491240FE81600CA5385 /* Cell.xib */; };
+		D337A499240FEC1B00CA5385 /* Quran Parts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D337A498240FEC1B00CA5385 /* Quran Parts.swift */; };
+		D337A49C240FEC6200CA5385 /* Parts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D337A49A240FEC6200CA5385 /* Parts.swift */; };
+		D337A49D240FEC6200CA5385 /* Parts.xib in Resources */ = {isa = PBXBuildFile; fileRef = D337A49B240FEC6200CA5385 /* Parts.xib */; };
+		D337A49F240FF78A00CA5385 /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D337A49E240FF78A00CA5385 /* color.swift */; };
+		D337A4A2240FFD2E00CA5385 /* Quran.swift in Sources */ = {isa = PBXBuildFile; fileRef = D337A4A1240FFD2E00CA5385 /* Quran.swift */; };
+		D337A4A5240FFDC500CA5385 /* ReadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D337A4A3240FFDC500CA5385 /* ReadCell.swift */; };
+		D337A4A6240FFDC500CA5385 /* ReadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D337A4A4240FFDC500CA5385 /* ReadCell.xib */; };
+		D33B95EA2412831300BC9DFB /* PrayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33B95E92412831300BC9DFB /* PrayTime.swift */; };
+		D33B95ED24128C8800BC9DFB /* PrayTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33B95EB24128C8800BC9DFB /* PrayTimeCell.swift */; };
+		D33B95EE24128C8800BC9DFB /* PrayTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33B95EC24128C8800BC9DFB /* PrayTimeCell.xib */; };
+		D33B95F0241292C500BC9DFB /* prayTimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33B95EF241292C500BC9DFB /* prayTimeData.swift */; };
+		D33B95F2241292D500BC9DFB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D33B95F1241292D500BC9DFB /* Default-568h@2x.png */; };
+		D3C140F724119FD6003D8479 /* History Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C140F624119FD6003D8479 /* History Reading.swift */; };
+		FBAEBE50922F47CFA3204D2A /* Pods_Elquran_Kaream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188589CC6C7CB5D9F25D3A0E /* Pods_Elquran_Kaream.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		188589CC6C7CB5D9F25D3A0E /* Pods_Elquran_Kaream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elquran_Kaream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD6A392B0A33B9BCC6E7E4E /* Pods-Elquran Kaream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elquran Kaream.debug.xcconfig"; path = "Target Support Files/Pods-Elquran Kaream/Pods-Elquran Kaream.debug.xcconfig"; sourceTree = "<group>"; };
+		93CF54612E3FCB4E6EEE18B1 /* Pods-Elquran Kaream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elquran Kaream.release.xcconfig"; path = "Target Support Files/Pods-Elquran Kaream/Pods-Elquran Kaream.release.xcconfig"; sourceTree = "<group>"; };
+		D325DC062413EEAF0016183F /* CityName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityName.swift; sourceTree = "<group>"; };
+		D337A474240FD87200CA5385 /* Elquran Kaream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elquran Kaream.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D337A477240FD87200CA5385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D337A47C240FD87200CA5385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D337A47F240FD87200CA5385 /* Elquran_Kaream.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Elquran_Kaream.xcdatamodel; sourceTree = "<group>"; };
+		D337A481240FD87B00CA5385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D337A484240FD87B00CA5385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D337A486240FD87B00CA5385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D337A48C240FE0B400CA5385 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		D337A490240FE81600CA5385 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		D337A491240FE81600CA5385 /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
+		D337A498240FEC1B00CA5385 /* Quran Parts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quran Parts.swift"; sourceTree = "<group>"; };
+		D337A49A240FEC6200CA5385 /* Parts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parts.swift; sourceTree = "<group>"; };
+		D337A49B240FEC6200CA5385 /* Parts.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Parts.xib; sourceTree = "<group>"; };
+		D337A49E240FF78A00CA5385 /* color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = color.swift; sourceTree = "<group>"; };
+		D337A4A1240FFD2E00CA5385 /* Quran.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quran.swift; sourceTree = "<group>"; };
+		D337A4A3240FFDC500CA5385 /* ReadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadCell.swift; sourceTree = "<group>"; };
+		D337A4A4240FFDC500CA5385 /* ReadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadCell.xib; sourceTree = "<group>"; };
+		D33B95E92412831300BC9DFB /* PrayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayTime.swift; sourceTree = "<group>"; };
+		D33B95EB24128C8800BC9DFB /* PrayTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayTimeCell.swift; sourceTree = "<group>"; };
+		D33B95EC24128C8800BC9DFB /* PrayTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrayTimeCell.xib; sourceTree = "<group>"; };
+		D33B95EF241292C500BC9DFB /* prayTimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prayTimeData.swift; sourceTree = "<group>"; };
+		D33B95F1241292D500BC9DFB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D3C140F624119FD6003D8479 /* History Reading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History Reading.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D337A471240FD87200CA5385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBAEBE50922F47CFA3204D2A /* Pods_Elquran_Kaream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FD10680F3B524BB0E8AA078 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DD6A392B0A33B9BCC6E7E4E /* Pods-Elquran Kaream.debug.xcconfig */,
+				93CF54612E3FCB4E6EEE18B1 /* Pods-Elquran Kaream.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB15E5C46FE31B86C4C01CBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				188589CC6C7CB5D9F25D3A0E /* Pods_Elquran_Kaream.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D337A46B240FD87100CA5385 = {
+			isa = PBXGroup;
+			children = (
+				D337A476240FD87200CA5385 /* Elquran Kaream */,
+				D33B95F1241292D500BC9DFB /* Default-568h@2x.png */,
+				D337A475240FD87200CA5385 /* Products */,
+				6FD10680F3B524BB0E8AA078 /* Pods */,
+				BB15E5C46FE31B86C4C01CBA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D337A475240FD87200CA5385 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D337A474240FD87200CA5385 /* Elquran Kaream.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D337A476240FD87200CA5385 /* Elquran Kaream */ = {
+			isa = PBXGroup;
+			children = (
+				D337A477240FD87200CA5385 /* AppDelegate.swift */,
+				D337A486240FD87B00CA5385 /* Info.plist */,
+				D337A4A0240FF8E400CA5385 /* Library */,
+				D337A495240FEBC900CA5385 /* Controllers */,
+				D337A497240FEBEB00CA5385 /* Cells */,
+				D337A494240FEBC000CA5385 /* View */,
+				D337A496240FEBE200CA5385 /* Data */,
+			);
+			path = "Elquran Kaream";
+			sourceTree = "<group>";
+		};
+		D337A494240FEBC000CA5385 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D337A47B240FD87200CA5385 /* Main.storyboard */,
+				D337A481240FD87B00CA5385 /* Assets.xcassets */,
+				D337A483240FD87B00CA5385 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D337A495240FEBC900CA5385 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D337A48C240FE0B400CA5385 /* HomePage.swift */,
+				D337A498240FEC1B00CA5385 /* Quran Parts.swift */,
+				D337A4A1240FFD2E00CA5385 /* Quran.swift */,
+				D3C140F624119FD6003D8479 /* History Reading.swift */,
+				D33B95E92412831300BC9DFB /* PrayTime.swift */,
+				D325DC062413EEAF0016183F /* CityName.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D337A496240FEBE200CA5385 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D33B95EF241292C500BC9DFB /* prayTimeData.swift */,
+				D337A47E240FD87200CA5385 /* Elquran_Kaream.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D337A497240FEBEB00CA5385 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D337A490240FE81600CA5385 /* Cell.swift */,
+				D337A491240FE81600CA5385 /* Cell.xib */,
+				D337A49A240FEC6200CA5385 /* Parts.swift */,
+				D337A49B240FEC6200CA5385 /* Parts.xib */,
+				D337A4A3240FFDC500CA5385 /* ReadCell.swift */,
+				D337A4A4240FFDC500CA5385 /* ReadCell.xib */,
+				D33B95EB24128C8800BC9DFB /* PrayTimeCell.swift */,
+				D33B95EC24128C8800BC9DFB /* PrayTimeCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D337A4A0240FF8E400CA5385 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D337A49E240FF78A00CA5385 /* color.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D337A473240FD87200CA5385 /* Elquran Kaream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D337A489240FD87B00CA5385 /* Build configuration list for PBXNativeTarget "Elquran Kaream" */;
+			buildPhases = (
+				9368908557DA94C3CC9E1761 /* [CP] Check Pods Manifest.lock */,
+				D337A470240FD87200CA5385 /* Sources */,
+				D337A471240FD87200CA5385 /* Frameworks */,
+				D337A472240FD87200CA5385 /* Resources */,
+				221ADB71666BD6C8857A99E9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Elquran Kaream";
+			productName = "Elquran Kaream";
+			productReference = D337A474240FD87200CA5385 /* Elquran Kaream.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D337A46C240FD87100CA5385 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Mohamed Ali";
+				TargetAttributes = {
+					D337A473240FD87200CA5385 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = D337A46F240FD87100CA5385 /* Build configuration list for PBXProject "Elquran Kaream" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D337A46B240FD87100CA5385;
+			productRefGroup = D337A475240FD87200CA5385 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D337A473240FD87200CA5385 /* Elquran Kaream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D337A472240FD87200CA5385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D337A485240FD87B00CA5385 /* LaunchScreen.storyboard in Resources */,
+				D33B95EE24128C8800BC9DFB /* PrayTimeCell.xib in Resources */,
+				D337A4A6240FFDC500CA5385 /* ReadCell.xib in Resources */,
+				D337A493240FE81600CA5385 /* Cell.xib in Resources */,
+				D337A49D240FEC6200CA5385 /* Parts.xib in Resources */,
+				D33B95F2241292D500BC9DFB /* Default-568h@2x.png in Resources */,
+				D337A482240FD87B00CA5385 /* Assets.xcassets in Resources */,
+				D337A47D240FD87200CA5385 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		221ADB71666BD6C8857A99E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Elquran Kaream/Pods-Elquran Kaream-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Elquran Kaream/Pods-Elquran Kaream-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Elquran Kaream/Pods-Elquran Kaream-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9368908557DA94C3CC9E1761 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Elquran Kaream-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D337A470240FD87200CA5385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D337A49F240FF78A00CA5385 /* color.swift in Sources */,
+				D337A478240FD87200CA5385 /* AppDelegate.swift in Sources */,
+				D337A492240FE81600CA5385 /* Cell.swift in Sources */,
+				D337A48D240FE0B400CA5385 /* HomePage.swift in Sources */,
+				D337A480240FD87200CA5385 /* Elquran_Kaream.xcdatamodeld in Sources */,
+				D337A4A2240FFD2E00CA5385 /* Quran.swift in Sources */,
+				D33B95EA2412831300BC9DFB /* PrayTime.swift in Sources */,
+				D337A49C240FEC6200CA5385 /* Parts.swift in Sources */,
+				D33B95F0241292C500BC9DFB /* prayTimeData.swift in Sources */,
+				D33B95ED24128C8800BC9DFB /* PrayTimeCell.swift in Sources */,
+				D337A499240FEC1B00CA5385 /* Quran Parts.swift in Sources */,
+				D325DC072413EEAF0016183F /* CityName.swift in Sources */,
+				D3C140F724119FD6003D8479 /* History Reading.swift in Sources */,
+				D337A4A5240FFDC500CA5385 /* ReadCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D337A47B240FD87200CA5385 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D337A47C240FD87200CA5385 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D337A483240FD87B00CA5385 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D337A484240FD87B00CA5385 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D337A487240FD87B00CA5385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D337A488240FD87B00CA5385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D337A48A240FD87B00CA5385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD6A392B0A33B9BCC6E7E4E /* Pods-Elquran Kaream.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NBM9PQRD2;
+				INFOPLIST_FILE = "Elquran Kaream/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MyCompany199.Elquran-Kaream";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D337A48B240FD87B00CA5385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93CF54612E3FCB4E6EEE18B1 /* Pods-Elquran Kaream.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NBM9PQRD2;
+				INFOPLIST_FILE = "Elquran Kaream/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MyCompany199.Elquran-Kaream";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D337A46F240FD87100CA5385 /* Build configuration list for PBXProject "Elquran Kaream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D337A487240FD87B00CA5385 /* Debug */,
+				D337A488240FD87B00CA5385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D337A489240FD87B00CA5385 /* Build configuration list for PBXNativeTarget "Elquran Kaream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D337A48A240FD87B00CA5385 /* Debug */,
+				D337A48B240FD87B00CA5385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D337A47E240FD87200CA5385 /* Elquran_Kaream.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D337A47F240FD87200CA5385 /* Elquran_Kaream.xcdatamodel */,
+			);
+			currentVersion = D337A47F240FD87200CA5385 /* Elquran_Kaream.xcdatamodel */;
+			path = Elquran_Kaream.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D337A46C240FD87100CA5385 /* Project object */;
+}

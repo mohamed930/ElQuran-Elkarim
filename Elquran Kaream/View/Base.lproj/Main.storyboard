@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SIR-g9-CZI">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Read-->
+        <scene sceneID="997-jK-CPv">
+            <objects>
+                <collectionViewController id="dWt-Jz-VI4" customClass="History_Reading" customModule="Elquran_Kaream" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="MpL-2y-o2F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LOU-gu-LKb">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="dWt-Jz-VI4" id="5Rj-4w-BY1"/>
+                            <outlet property="delegate" destination="dWt-Jz-VI4" id="ZV1-cG-GY7"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Read" id="f2l-jk-D8e">
+                        <barButtonItem key="leftBarButtonItem" systemItem="undo" id="3DR-OE-y6c">
+                            <connections>
+                                <action selector="BTNBack:" destination="dWt-Jz-VI4" id="5JI-IL-JNH"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="SVT-ft-eW2">
+                            <connections>
+                                <action selector="BTNBookMarks:" destination="dWt-Jz-VI4" id="hpb-ci-FJh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bE-jo-MFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1846" y="1400"/>
+        </scene>
+        <!--Quran Parts-->
+        <scene sceneID="mK0-DY-cpa">
+            <objects>
+                <viewController id="VnH-Y4-xUs" customClass="Quran_Parts" customModule="Elquran_Kaream" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bjP-7F-ZzA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPu-0l-2ga">
+                                <rect key="frame" x="0.0" y="30" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Parts" id="9vg-hZ-KHi">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="undo" id="hLY-77-TML">
+                                            <connections>
+                                                <action selector="BTNBack:" destination="VnH-Y4-xUs" id="eId-Kr-Dfd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Continue Read" id="lxP-eH-Vbk">
+                                            <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="BTNContinue:" destination="VnH-Y4-xUs" id="YyG-KR-PEt"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dEf-xf-c01">
+                                <rect key="frame" x="0.0" y="82" width="375" height="730"/>
+                                <color key="backgroundColor" red="0.5369028991" green="0.58385548860000003" blue="0.26113329480000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.53725490196078429" green="0.58431372549019611" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.5369028991" green="0.58385548860000003" blue="0.26113329480000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.53725490200000003" green="0.58431372550000005" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="VnH-Y4-xUs" id="sge-vp-0dU"/>
+                                    <outlet property="delegate" destination="VnH-Y4-xUs" id="jkN-tx-DlL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.53725490196078429" green="0.58431372549019611" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dEf-xf-c01" firstAttribute="trailing" secondItem="3Ve-Me-GIj" secondAttribute="trailing" id="1k1-5c-sfc"/>
+                            <constraint firstItem="dEf-xf-c01" firstAttribute="top" secondItem="LPu-0l-2ga" secondAttribute="bottom" constant="8" id="LuE-Aa-Dgq"/>
+                            <constraint firstItem="dEf-xf-c01" firstAttribute="leading" secondItem="3Ve-Me-GIj" secondAttribute="leading" id="Nqp-cm-iT5"/>
+                            <constraint firstAttribute="bottom" secondItem="dEf-xf-c01" secondAttribute="bottom" id="S7A-Ad-vw9"/>
+                            <constraint firstItem="LPu-0l-2ga" firstAttribute="trailing" secondItem="3Ve-Me-GIj" secondAttribute="trailing" id="UJr-QA-2NM"/>
+                            <constraint firstItem="LPu-0l-2ga" firstAttribute="leading" secondItem="3Ve-Me-GIj" secondAttribute="leading" id="UrM-We-npf"/>
+                            <constraint firstItem="LPu-0l-2ga" firstAttribute="top" secondItem="bjP-7F-ZzA" secondAttribute="top" constant="30" id="wIL-7Y-Sqz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Ve-Me-GIj"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="dEf-xf-c01" id="OdL-ng-oZf"/>
+                        <segue destination="7qZ-LV-DN7" kind="showDetail" identifier="Read" id="Qpd-PI-2Zx"/>
+                        <segue destination="7jU-lf-4oe" kind="showDetail" identifier="History" id="jO9-7o-26q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vnl-My-DJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-623.1884057971015" y="720.53571428571422"/>
+        </scene>
+        <!--Pray Time-->
+        <scene sceneID="fGF-Tp-xor">
+            <objects>
+                <viewController id="Jf4-w7-RrJ" customClass="PrayTime" customModule="Elquran_Kaream" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CfS-h2-lRj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Salaa" translatesAutoresizingMaskIntoConstraints="NO" id="vfa-9G-SzG">
+                                <rect key="frame" x="108" y="118" width="159" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="Mty-7p-Rgf"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWy-zn-d4f">
+                                <rect key="frame" x="0.0" y="291" width="375" height="273"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D0W-LP-YRp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="273"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1LZ-Qs-58z">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Jf4-w7-RrJ" id="yvd-kd-OGI"/>
+                                            <outlet property="delegate" destination="Jf4-w7-RrJ" id="xaZ-Q3-4IA"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="D0W-LP-YRp" secondAttribute="trailing" id="3Mk-ib-SjQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="D0W-LP-YRp" secondAttribute="bottom" id="Ee6-zJ-ggk"/>
+                                    <constraint firstAttribute="height" constant="273" id="FN3-6r-hwQ"/>
+                                    <constraint firstItem="D0W-LP-YRp" firstAttribute="leading" secondItem="vWy-zn-d4f" secondAttribute="leading" id="bii-DV-9Ze"/>
+                                    <constraint firstItem="D0W-LP-YRp" firstAttribute="top" secondItem="vWy-zn-d4f" secondAttribute="top" id="uar-2J-M2v"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="187" translatesAutoresizingMaskIntoConstraints="NO" id="DJC-vd-XbE">
+                                <rect key="frame" x="16" y="598" width="343" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZU-6s-Hqg">
+                                        <rect key="frame" x="0.0" y="0.0" width="78" height="36"/>
+                                        <color key="backgroundColor" red="0.1833747741" green="0.48076885790000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="   Prev">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="BTNPrev:" destination="Jf4-w7-RrJ" eventType="touchUpInside" id="n8R-sS-h5M"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9E3-GZ-vIE">
+                                        <rect key="frame" x="265" y="0.0" width="78" height="36"/>
+                                        <color key="backgroundColor" red="1" green="0.89208373730000001" blue="0.18863322630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="78" id="pbm-wI-ssz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="BTNNext:" destination="Jf4-w7-RrJ" eventType="touchUpInside" id="W03-RH-kEc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="YbJ-av-zoZ"/>
+                                    <constraint firstAttribute="height" constant="36" id="lSd-J7-Bt1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DJC-vd-XbE" firstAttribute="leading" secondItem="FUA-Te-MoY" secondAttribute="leading" constant="16" id="4bj-aC-EO4"/>
+                            <constraint firstItem="FUA-Te-MoY" firstAttribute="trailing" secondItem="vfa-9G-SzG" secondAttribute="trailing" constant="108" id="C6r-sV-eyR"/>
+                            <constraint firstItem="vWy-zn-d4f" firstAttribute="trailing" secondItem="FUA-Te-MoY" secondAttribute="trailing" id="FYE-Je-e0f"/>
+                            <constraint firstItem="DJC-vd-XbE" firstAttribute="top" secondItem="vWy-zn-d4f" secondAttribute="bottom" constant="34" id="Tyq-Uc-7cs"/>
+                            <constraint firstItem="vfa-9G-SzG" firstAttribute="leading" secondItem="FUA-Te-MoY" secondAttribute="leading" constant="108" id="ao2-2V-2Cf"/>
+                            <constraint firstItem="vWy-zn-d4f" firstAttribute="leading" secondItem="FUA-Te-MoY" secondAttribute="leading" id="ebm-mM-69q"/>
+                            <constraint firstItem="vfa-9G-SzG" firstAttribute="top" secondItem="FUA-Te-MoY" secondAttribute="top" constant="30" id="evN-68-iHa"/>
+                            <constraint firstItem="vWy-zn-d4f" firstAttribute="top" secondItem="vfa-9G-SzG" secondAttribute="bottom" constant="8" id="uAJ-VN-USG"/>
+                            <constraint firstItem="FUA-Te-MoY" firstAttribute="trailing" secondItem="DJC-vd-XbE" secondAttribute="trailing" constant="16" id="ut3-om-ElX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FUA-Te-MoY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JmT-7B-1WB">
+                        <barButtonItem key="leftBarButtonItem" systemItem="undo" id="Q4q-Ab-gVc">
+                            <connections>
+                                <action selector="BTNBack:" destination="Jf4-w7-RrJ" id="Mqd-lp-s1l"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="City" id="7dk-gk-M9V">
+                            <connections>
+                                <action selector="BTNCity:" destination="Jf4-w7-RrJ" id="ALa-Sb-rUm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="BorderView" destination="vWy-zn-d4f" id="dI2-yo-Lfd"/>
+                        <outlet property="collectionView" destination="D0W-LP-YRp" id="dRY-p5-RtU"/>
+                        <segue destination="Jjr-gb-VJy" kind="showDetail" identifier="City" id="dcC-UF-zYC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wkM-RO-Cvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418.4000000000001" y="719.70443349753702"/>
+        </scene>
+        <!--City Name-->
+        <scene sceneID="ooK-We-vli">
+            <objects>
+                <viewController id="Jjr-gb-VJy" customClass="CityName" customModule="Elquran_Kaream" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SyR-BB-QLE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8t-LA-TAU">
+                                <rect key="frame" x="16" y="44" width="66" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="3iM-Y4-nSp"/>
+                                    <constraint firstAttribute="width" constant="66" id="rep-8A-3Hf"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="BTNBack"/>
+                                <connections>
+                                    <action selector="BTNBack:" destination="Jjr-gb-VJy" eventType="touchUpInside" id="GnR-Qz-bJ1"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MYR-AC-yMC">
+                                <rect key="frame" x="16" y="138" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FXE-mR-bDF"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Country Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bdD-1G-IDm">
+                                <rect key="frame" x="16" y="176" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ag8-8Q-oTr"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIN-iR-q4b">
+                                <rect key="frame" x="86" y="229" width="203" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="sKm-IJ-nFk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Get Pray Time">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="BTNGo:" destination="Jjr-gb-VJy" eventType="touchUpInside" id="qjT-5B-8fI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="MYR-AC-yMC" firstAttribute="leading" secondItem="j8a-j6-gdq" secondAttribute="leading" constant="16" id="6tM-iE-rfi"/>
+                            <constraint firstItem="bdD-1G-IDm" firstAttribute="trailing" secondItem="MYR-AC-yMC" secondAttribute="trailing" id="Ch1-C3-JsU"/>
+                            <constraint firstItem="bdD-1G-IDm" firstAttribute="leading" secondItem="MYR-AC-yMC" secondAttribute="leading" id="EPc-cv-Vs0"/>
+                            <constraint firstItem="O8t-LA-TAU" firstAttribute="leading" secondItem="j8a-j6-gdq" secondAttribute="leading" constant="16" id="FTg-7Q-mj4"/>
+                            <constraint firstItem="j8a-j6-gdq" firstAttribute="trailing" secondItem="O8t-LA-TAU" secondAttribute="trailing" constant="293" id="JUe-XU-hKN"/>
+                            <constraint firstItem="MYR-AC-yMC" firstAttribute="top" secondItem="O8t-LA-TAU" secondAttribute="bottom" constant="33" id="Su7-T0-flo"/>
+                            <constraint firstItem="mIN-iR-q4b" firstAttribute="leading" secondItem="j8a-j6-gdq" secondAttribute="leading" constant="86" id="VzG-8D-lue"/>
+                            <constraint firstItem="O8t-LA-TAU" firstAttribute="top" secondItem="j8a-j6-gdq" secondAttribute="top" id="bpj-mS-pn7"/>
+                            <constraint firstItem="mIN-iR-q4b" firstAttribute="top" secondItem="bdD-1G-IDm" secondAttribute="bottom" constant="23" id="eyF-j7-G5g"/>
+                            <constraint firstItem="j8a-j6-gdq" firstAttribute="trailing" secondItem="mIN-iR-q4b" secondAttribute="trailing" constant="86" id="kLe-Tr-htg"/>
+                            <constraint firstItem="j8a-j6-gdq" firstAttribute="trailing" secondItem="MYR-AC-yMC" secondAttribute="trailing" constant="16" id="nym-Kv-h0k"/>
+                            <constraint firstItem="bdD-1G-IDm" firstAttribute="top" secondItem="MYR-AC-yMC" secondAttribute="bottom" constant="8" id="onr-F5-5Fz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j8a-j6-gdq"/>
+                    </view>
+                    <connections>
+                        <outlet property="TXTCityName" destination="MYR-AC-yMC" id="whI-BP-HMy"/>
+                        <outlet property="TXTCountry" destination="bdD-1G-IDm" id="efZ-zb-YRg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTK-Rp-EVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2140" y="719.70443349753702"/>
+        </scene>
+        <!--Read-->
+        <scene sceneID="ova-4i-URb">
+            <objects>
+                <collectionViewController id="ryb-n4-237" customClass="Quran" customModule="Elquran_Kaream" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="4Cj-zW-60c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QME-d7-61I">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="ryb-n4-237" id="jCJ-Pc-vKL"/>
+                            <outlet property="delegate" destination="ryb-n4-237" id="yC6-wk-tu9"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Read" id="S2d-tW-oT5">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="BXn-up-zX2">
+                            <connections>
+                                <action selector="BTNBack:" destination="ryb-n4-237" id="eVI-AZ-vdX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="s03-sN-PT1">
+                            <connections>
+                                <action selector="BTNBookMarks:" destination="ryb-n4-237" id="EPZ-nd-QP2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3h7-RO-Vgw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641" y="1400"/>
+        </scene>
+        <!--Home Page-->
+        <scene sceneID="YMv-3s-wQw">
+            <objects>
+                <collectionViewController id="SIR-g9-CZI" customClass="HomePage" customModule="Elquran_Kaream" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="WLS-5L-Nzl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a7A-EF-GxN">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="SIR-g9-CZI" id="ec5-jP-wEP"/>
+                            <outlet property="delegate" destination="SIR-g9-CZI" id="sGe-8e-aKu"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <segue destination="VnH-Y4-xUs" kind="showDetail" identifier="First" id="bm1-Hy-anL"/>
+                        <segue destination="SLQ-Q5-Zaz" kind="showDetail" identifier="Time" id="6sm-Kz-txb"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UD1-mQ-uQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="67"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="z7s-Kc-kZZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7qZ-LV-DN7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5qu-YM-YsE">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.5369028991" green="0.58385548860000003" blue="0.26113329480000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ryb-n4-237" kind="relationship" relationship="rootViewController" id="o8r-h4-Aax"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yea-dZ-RM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143" y="1400"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IGp-T3-iA7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7jU-lf-4oe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gwt-Gf-BF3">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.5369028991" green="0.58385548860000003" blue="0.26113329480000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dWt-Jz-VI4" kind="relationship" relationship="rootViewController" id="pIP-3z-dHu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eNY-r9-SaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1106" y="1400"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pwK-Zt-waL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SLQ-Q5-Zaz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Bp-vP-3WS">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Jf4-w7-RrJ" kind="relationship" relationship="rootViewController" id="9uh-KN-rBW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhS-sF-lU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="719.70443349753702"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BTNBack" width="66" height="65"/>
+        <image name="Salaa" width="100" height="100"/>
+    </resources>
+</document>
